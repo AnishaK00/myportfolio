@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Anisha Kumpakha</title>
+  <meta name="description" content="Get in touch with Anisha Kumpakha for internships and collaborations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="shortcut icon" href="favicon_io/favicon.ico">
+</head>
+
+<body>
+  <header class="navbar" id="navbar">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+
+        <span class="logo-text">Anisha Kumpakha</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <a href="contact.html" class="btn btn-neon nav-cta">Hire Me</a>
+
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <div class="mobile-menu glass" id="mobileMenu">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page reveal">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Contact</span>
+          <h2>Let's Connect</h2>
+          <p class="subtitle">Reach out for internships, collaborations, project conversations or just want to say hi.
+          </p>
+          <div class="divider"></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a href="mailto:anishakumpakha36@gmail.com" class="glass card info-card"><i
+                class="fa-solid fa-envelope"></i>
+              <div><span>Email</span><strong>anishakumpakha36@gmail.com</strong></div>
+            </a>
+            <div class="glass card info-card"><i class="fa-solid fa-location-dot"></i>
+              <div><span>Location</span><strong>Bhaktapur, Nepal</strong></div>
+            </div>
+            <a href="https://github.com/AnishaK00" target="_blank" rel="noopener" class="glass card info-card"><i
+                class="fa-brands fa-github"></i>
+              <div><span>GitHub</span><strong>github.com/AnishaK00</strong></div>
+            </a>
+            <a href="https://www.linkedin.com/in/anisha-kumpakha-005469308/" target="_blank" rel="noopener"
+              class="glass card info-card"><i class="fa-brands fa-linkedin"></i>
+              <div><span>LinkedIn</span><strong>linkedin.com/in/anisha-kumpakha</strong></div>
+            </a>
+          </div>
+          <form class="glass neon-border contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <label>Name<input type="text" name="name" required maxlength="100" placeholder="Your name" /></label>
+              <label>Email<input type="email" name="email" required maxlength="255"
+                  placeholder="you@example.com" /></label>
+            </div>
+            <label>Subject<input type="text" name="subject" required maxlength="150"
+                placeholder="What's this about?" /></label>
+            <label>Message<textarea name="message" rows="6" required maxlength="2000"
+                placeholder="Tell me a bit about your project or idea…"></textarea></label>
+            <button type="submit" class="btn btn-neon"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <div class="container footer-inner">
+      <p>Designed &amp; Developed by <strong>Anisha Kumpakha</strong></p>
+      <div class="footer-socials">
+        <a href="https://github.com/AnishaK00" target="_blank" rel="noopener" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/anisha-kumpakha-005469308/" target="_blank" rel="noopener"
+          aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:anishakumpakha36@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="copyright">© <span id="year"></span> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

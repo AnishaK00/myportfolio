@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Anisha Kumpakha</title>
+    <meta name="description"
+        content="Featured projects: POLARIS AI, Document Analyzer using YOLO, Rentera, CliffCart, Canteen Management System." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Anisha Kumpakha</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-neon nav-cta">Hire Me</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </nav>
+
+        <div class="mobile-menu glass" id="mobileMenu">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page reveal">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Projects</span>
+                    <h2>Featured Projects</h2>
+                    <p class="subtitle">A selection of work spanning full-stack web apps, AI systems, and desktop
+                        software.</p>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="project-list">
+
+                    <!-- POLARIS AI -->
+                    <article class="glass project-card" id="polaris-ai">
+                        <div class="project-gallery" data-gallery>
+                            <div class="gallery-main">
+                                <div class="gallery-slide active" data-index="0">
+                                    <div class="placeholder-slide grad-1">
+                                        <img src="assets/polarisai/setup.png" alt="setup" />
+
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="1">
+                                    <div class="placeholder-slide grad-2">
+                                        <img src="assets/polarisai/pciscore.png" alt="PCI Score Dashboard" />
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="2">
+                                    <div class="placeholder-slide grad-3">
+                                        <img src="assets/polarisai/evidence.png" alt="Sentiment & Evidence Breakdown" />
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="3">
+                                    <div class="placeholder-slide grad-4">
+                                        <img src="assets/polarisai/extension.png" alt="Polaris-AI as extension" />
+
+                                    </div>
+                                </div>
+
+                                <button class="gallery-nav prev" aria-label="Previous screenshot" data-dir="-1">
+                                    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                </button>
+                                <button class="gallery-nav next" aria-label="Next screenshot" data-dir="1">
+                                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+
+                                <div class="gallery-counter"><span data-current>1</span> / <span data-total>4</span>
+                                </div>
+                            </div>
+
+                            <div class="gallery-thumbs" role="tablist" aria-label="POLARIS AI screenshots">
+                                <button class="thumb active" data-index="0" role="tab"
+                                    aria-selected="true">Setup</button>
+                                <button class="thumb" data-index="1" role="tab" aria-selected="false">PCI Score</button>
+                                <button class="thumb" data-index="2" role="tab" aria-selected="false">Evidence</button>
+                                <button class="thumb" data-index="3" role="tab" aria-selected="false">As a
+                                    Extension</button>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <span class="project-tag">AI-Powered Controversy Analysis</span>
+                            <h2>POLARIS AI</h2>
+                            <p>
+                                An AI-driven controversy detection platform that evaluates statements and topics by
+                                analyzing online discussions, sentiment, and audience polarization. It generates a
+                                Polarization &amp; Controversy Index (PCI) score with evidence-backed insights, helping
+                                users understand why a topic is controversial through an interactive Streamlit
+                                dashboard.
+                            </p>
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>LLMs</span>
+                                <span>Reddit API</span>
+                                <span>NLP</span>
+                                <span>Sentiment Analysis</span>
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- <span class="mini-btn is-disabled" aria-disabled="true">
+                                    <i class="fa-solid fa-circle-pause" aria-hidden="true"></i> Demo Coming Soon
+                                </span> -->
+                                <a href="https://github.com/krishala11/Polaris-AI" target="_blank" rel="noopener"
+                                    class="mini-btn">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+
+                    <!-- RENTERA -->
+                    <article class="glass project-card" id="rentera">
+                        <div class="project-gallery" data-gallery>
+                            <div class="gallery-main">
+                                <div class="gallery-slide active" data-index="0">
+                                    <img src="assets/rentera/property.png" alt="property listing" />
+                                    <!-- <span>Home &amp; Property Listings</span> -->
+
+                                </div>
+                                <div class="gallery-slide" data-index="1">
+                                    <div class="placeholder-slide grad-4">
+                                        <!-- <i class="fa-solid fa-shield-halved" aria-hidden="true"></i> -->
+                                        <img src="assets/rentera/addproperty.png" alt="addproperty" />
+                                        <!-- <span>Adding Property</span> -->
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="2">
+                                    <div class="placeholder-slide grad-1">
+                                        <img src="assets/rentera/chat.jpg" alt="property listing" />
+                                        <!-- <span>Live Chat Between Owner &amp; Renter</span> -->
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="3">
+                                    <div class="placeholder-slide grad-2">
+                                        <img src="assets/rentera/chatbot.png" alt="property listing" />
+                                    </div>
+                                </div>
+
+                                <button class="gallery-nav prev" aria-label="Previous screenshot" data-dir="-1">
+                                    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                </button>
+                                <button class="gallery-nav next" aria-label="Next screenshot" data-dir="1">
+                                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+
+                                <div class="gallery-counter"><span data-current>1</span> / <span data-total>4</span>
+                                </div>
+                            </div>
+
+                            <div class="gallery-thumbs" role="tablist" aria-label="Rentera screenshots">
+                                <button class="thumb active" data-index="0" role="tab"
+                                    aria-selected="true">Listings</button>
+                                <button class="thumb" data-index="1" role="tab" aria-selected="false">Add
+                                    Property</button>
+                                <button class="thumb" data-index="2" role="tab" aria-selected="false">Live Chat</button>
+                                <button class="thumb" data-index="3" role="tab" aria-selected="false">Chatbot</button>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <span class="project-tag">Peer-to-Peer Rental Marketplace</span>
+                            <h2>Rentera</h2>
+                            <p>
+                                A rental marketplace that connects property owners and renters without intermediaries.
+                                Features smart property verification, verified user roles, live chat, and rental
+                                chatbot assistance.
+                            </p>
+                            <div class="tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Django</span><span>SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- <span class="mini-btn is-disabled" aria-disabled="true"><i
+                                        class="fa-solid fa-circle-pause" aria-hidden="true"></i> Demo Coming Soon</span> -->
+                                <a href="https://github.com/AnishaK00/Rentera" target="_blank" rel="noopener"
+                                    class="mini-btn"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- DOCUMENT ANALYZER USING YOLO -->
+
+                    <article class="glass project-card" id="document-analyzer-yolo">
+                        <div class="project-gallery" data-gallery>
+                            <div class="gallery-main">
+                                <div class="gallery-slide active" data-index="0">
+                                    <div class="placeholder-slide grad-2">
+                                    <img src="assets/yolo/homepage.png" alt="homepage" />
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="1">
+                                    <div class="placeholder-slide grad-3">
+                                    <img src="assets/yolo/page_preview.png" alt="page_preview" />>
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="2">
+                                    <div class="placeholder-slide grad-4">
+                                    <img src="assets/yolo/detection.png" alt="detection" />>
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="3">
+                                    <div class="placeholder-slide grad-1">
+                                    <img src="assets/yolo/batch_pdf.png" alt="batch_pdf" />>
+                                    </div>
+                                </div>
+
+                                <button class="gallery-nav prev" aria-label="Previous screenshot" data-dir="-1">
+                                    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                </button>
+                                <button class="gallery-nav next" aria-label="Next screenshot" data-dir="1">
+                                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+
+                                <div class="gallery-counter"><span data-current>1</span> / <span data-total>4</span>
+                                </div>
+                            </div>
+
+                            <div class="gallery-thumbs" role="tablist"
+                                aria-label="Document Analyzer using YOLO screenshots">
+                                <button class="thumb active" data-index="0" role="tab"
+                                    aria-selected="true">Home Page</button>
+                                <button class="thumb" data-index="1" role="tab" aria-selected="false">Page Preview</button>
+                                <button class="thumb" data-index="2" role="tab"
+                                    aria-selected="false">Detection Box</button>
+                                <button class="thumb" data-index="3" role="tab" aria-selected="false">Batch PDF</button>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <span class="project-tag">AI-Powered Document Analysis</span>
+                            <h2>Document Analyzer using YOLO</h2>
+                            <p>
+                                An intelligent document analysis system that uses a custom-trained YOLO model to
+                                detect and classify text blocks, tables, and figures from images and PDF documents.
+                                Built with a Streamlit interface, it enables users to upload documents, perform
+                                real-time object detection, and visualize detected regions with bounding boxes
+                                through an intuitive and interactive web application.
+                            </p>
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>YOLO</span>
+                                <span>Streamlit</span>
+                                <span>OCR</span>
+                                <span>Pillow</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- <span class="mini-btn is-disabled" aria-disabled="true">
+                                    <i class="fa-solid fa-circle-pause" aria-hidden="true"></i> Demo Coming Soon
+                                </span> -->
+                                <a href="https://github.com/AnishaK00/Document-Analyzer-YOLO-" target="_blank"
+                                    rel="noopener" class="mini-btn"><i class="fa-brands fa-github"
+                                        aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CLIFFCART -->
+                    <article class="glass project-card" id="cliffcart">
+                        <div class="project-gallery" data-gallery>
+                            <div class="gallery-main">
+                                <div class="gallery-slide active" data-index="0">
+                                    <div class="placeholder-slide grad-4">
+                                        <img src="assets/cliffcart/homepage.png" alt="homepage" />
+                                    </div>
+                                </div>
+
+                                <div class="gallery-slide" data-index="1">
+                                    <div class="placeholder-slide grad-1">
+                                        <img src="assets/cliffcart/details.png" alt="product details" />
+
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="2">
+                                    <div class="placeholder-slide grad-2">
+                                        <img src="assets/cliffcart/checkout.png" alt="checkout" />
+                                    </div>
+                                </div>
+
+
+                                <button class="gallery-nav prev" aria-label="Previous screenshot" data-dir="-1">
+                                    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                </button>
+                                <button class="gallery-nav next" aria-label="Next screenshot" data-dir="1">
+                                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+
+                                <div class="gallery-counter"><span data-current>1</span> / <span data-total>4</span>
+                                </div>
+                            </div>
+
+                            <div class="gallery-thumbs" role="tablist" aria-label="CliffCart screenshots">
+                                <button class="thumb active" data-index="0" role="tab"
+                                    aria-selected="true">Store</button>
+                                <button class="thumb" data-index="1" role="tab" aria-selected="false">Product</button>
+                                <button class="thumb" data-index="2" role="tab" aria-selected="false">Checkout</button>
+
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <span class="project-tag">E-Commerce Platform</span>
+                            <h2>CliffCart</h2>
+                            <p>
+                                An online shopping platform for climbing and trekking equipment with authentication,
+                                category browsing, shopping cart, secure checkout, and product management.
+                            </p>
+                            <div class="tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Django</span><span>PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- <span class="mini-btn is-disabled" aria-disabled="true"><i
+                                        class="fa-solid fa-circle-pause" aria-hidden="true"></i> Demo Coming Soon</span> -->
+                                <a href="https://github.com/AnishaK00/CliffCart" target="_blank" rel="noopener"
+                                    class="mini-btn"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CANTEEN MANAGEMENT SYSTEM -->
+                    <article class="glass project-card" id="canteen-management-system">
+                        <div class="project-gallery" data-gallery>
+                            <div class="gallery-main">
+                                <div class="gallery-slide active" data-index="0">
+                                    <div class="placeholder-slide grad-1">
+                                        <img src="assets/canteen/mainmenu.png" alt="mainmenu" />
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="1">
+                                    <div class="placeholder-slide grad-2">
+                                        <img src="assets/canteen/receipt.png" alt="receipt" />
+
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="2">
+                                    <div class="placeholder-slide grad-3">
+                                        <img src="assets/canteen/loadblc.png" alt="load balance" />
+                                    </div>
+                                </div>
+                                <div class="gallery-slide" data-index="3">
+                                    <div class="placeholder-slide grad-4">
+                                        <img src="assets/canteen/adminlogin.png" alt="property listing" />
+                                    </div>
+                                </div>
+
+                                <button class="gallery-nav prev" aria-label="Previous screenshot" data-dir="-1">
+                                    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                </button>
+                                <button class="gallery-nav next" aria-label="Next screenshot" data-dir="1">
+                                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+
+                                <div class="gallery-counter"><span data-current>1</span> / <span data-total>4</span>
+                                </div>
+                            </div>
+
+                            <div class="gallery-thumbs" role="tablist"
+                                aria-label="Canteen Management System screenshots">
+                                <button class="thumb active" data-index="0" role="tab" aria-selected="true">Main
+                                    Menu</button>
+                                <button class="thumb" data-index="1" role="tab" aria-selected="false">Receipt</button>
+                                <button class="thumb" data-index="2" role="tab" aria-selected="false">Customer Load
+                                    balance</button>
+                                <button class="thumb" data-index="3" role="tab" aria-selected="false">Admin
+                                    Login</button>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <span class="project-tag">Desktop Application</span>
+                            <h2>Canteen Management System</h2>
+                            <p>
+                                A graphical desktop application for food ordering, billing, and menu management with
+                                an interactive interface built using C++ graphics libraries.
+                            </p>
+                            <div class="tags"><span>C++</span><span>Graphics Library</span><span>OOP</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/AnishaK00/Canteen-Management-System" target="_blank"
+                                    rel="noopener" class="mini-btn"><i class="fa-brands fa-github"
+                                        aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-line"></div>
+        <div class="container footer-inner">
+            <p>Designed &amp; Developed by <strong>Anisha Kumpakha</strong></p>
+            <div class="footer-socials">
+                <a href="https://github.com/AnishaK00" target="_blank" rel="noopener" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anisha-kumpakha-005469308/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:anishakumpakha36@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="copyright">© <span id="year"></span> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
